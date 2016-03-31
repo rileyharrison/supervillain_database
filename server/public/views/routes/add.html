@@ -1,0 +1,54 @@
+<p>
+
+    <form ng-submit = "addVillain(villains)">
+        <input ng-model="villains.Name" type = "text" placeholder="enter villain"  />
+        <input ng-model="villains.Power" type = "text" placeholder="enter Power"  />
+        <input ng-model="villains.Foe" type = "text" placeholder="enter Foe"  />
+        <!--<input ng-model="villains.Weakness" type = "text" placeholder="enter Weakness"  />-->
+        <select ng-model="villains.Weakness">
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Earth">Earth</option>
+            <option value="Air">Air</option>
+
+
+
+
+
+        </select>
+
+
+
+
+
+
+
+
+
+
+
+        <input ng-model="villains.Image" type = "text" placeholder="enter Image"  />
+
+
+        <input type = "submit" value = "save"/>
+    </form>
+    <!--
+    <div ng-repeat = "villain in data">
+
+        <h2>{{ villain.Name }}</h2>
+        <p>
+            {{ villain.Power }}
+        </p>
+        <p>
+            {{ villain.Foe }}
+        </p>
+        <p>
+            {{ villain.Weakness }}
+        </p>
+        <p>
+            {{ villain.Image }}
+        </p>
+        <button ng-click="addVillain(villain)"> Add Villain</button>
+    </div>
+    -->
+</p>

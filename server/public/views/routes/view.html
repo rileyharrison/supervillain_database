@@ -1,0 +1,24 @@
+<p>
+
+    <div ng-repeat="Villain in data.response">
+        <h2>{{ Villain.Name }}</h2>
+        <p>Power:
+            {{ Villain.Power }}
+        </p>
+        <p>Foe:
+            {{ Villain.Foe }}
+        </p>
+        <p>Weakness:
+            {{ Villain.Weakness }}
+        </p>
+
+
+        <img ng-src="{{ Villain.Image }}" alt="Description" />
+
+        <button ng-click="deleteVillain(Villain._id)">Delete </button>
+
+
+
+    </div>
+
+</p>

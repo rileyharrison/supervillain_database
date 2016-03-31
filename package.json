@@ -1,0 +1,28 @@
+{
+  "name": "crud_test_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Riley Harrison",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileyharrison/crud_assess_practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rileyharrison/crud_assess_practice/issues"
+  },
+  "homepage": "https://github.com/rileyharrison/crud_assess_practice#readme",
+  "description": ""
+}
