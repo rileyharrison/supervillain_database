@@ -11,7 +11,7 @@ mongoDB.on("error", function(err){
     console.log("mongo connection error:", err);
 });
 
-mongoDB.on("open", function(err){
+mongoDB.once("open", function(err){
     console.log("mongo connection open:");
 });
 
