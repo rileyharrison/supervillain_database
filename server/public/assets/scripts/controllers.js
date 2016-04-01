@@ -32,7 +32,7 @@ myApp.controller("ShowController", ["$scope", "VillainService", function($scope,
 
         $scope.deleteVillain = function(villainId){
             console.log("fixing to nuke", villainId);
-            var nukeId = {"villainId": villainId}
+            var nukeId = {"villainId": villainId};
             VillainService.nukeVillain(nukeId);
 
         };

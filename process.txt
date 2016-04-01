@@ -36,15 +36,17 @@
 36. new file server > public > views > routes > view.html
 37. retype contents of server > models > movies.js
 38. retype contents of server > modules > db.js
-39. retype contents of server > modules > index.js
+39. retype contents of server > modules > index.js **Note: delete url is nour Plural, change to singular in all cases like post get
 40. retype contents of public > assets > scripts > app.js
-41. retype contents of public  assets > scripts > controller.js
+41. retype contents of public  assets > scripts > controllers.js
 42. retype contents of public > assets > scripts > factories.js
 43. retype contents of server > public > views > routes > add.html
 44. retype contents of server > public > views > routes > home.html
 45. retype contents of server > public > views > routes > view.html
 46. retype contents of server > public > views > index.html
 47. retype contents of server > public > app.js
+
+**** // TODO database connection string!
 
 ***
 TODO dependencies. For each thing that changes, make note of what needs to change where.
