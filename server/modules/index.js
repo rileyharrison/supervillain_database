@@ -27,7 +27,7 @@ router.post("/villain", function(req,res){
     });
 });
 
-router.delete("/villains/:id", function(req,res){
+router.delete("/villain/:id", function(req,res){
     console.log("in app js for delete", req.params.id);
     Villains.remove({_id: req.params.id},function(err,data){
         if(err){

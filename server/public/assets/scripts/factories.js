@@ -17,7 +17,7 @@ myApp.factory("VillainService", ["$http", function($http){
 
     var nukeVillain = function(villainId){
         console.log("in factory", villainId.villainId);
-        $http.delete("/villains/" + villainId.villainId).then(function(response){
+        $http.delete("/villain/" + villainId.villainId).then(function(response){
         getVillains();
     });
 };
