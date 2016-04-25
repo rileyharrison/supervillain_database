@@ -1,6 +1,8 @@
 myApp.controller("AddController", ["$scope", "$http", "VillainService", "$location", function($scope, $http, VillainService, $location){
     $scope.villains = {};
     $scope.data = [];
+    $scope.forceData = [];
+
 
     // $scope.search = function(data){
     //     console.log("we are gonna search for", data);
@@ -26,6 +28,8 @@ myApp.controller("AddController", ["$scope", "$http", "VillainService", "$locati
 }]);
 
 myApp.controller("ShowController", ["$scope", "VillainService", function($scope, VillainService){
+
+        $scope.forceresponse = [];
     console.log("in ShowController");
 
     //------
@@ -36,8 +40,22 @@ myApp.controller("ShowController", ["$scope", "VillainService", function($scope,
             VillainService.nukeVillain(nukeId);
 
         };
+
+        // page has loaded.
     //-----
     VillainService.getVillains();
 
+    VillainService.getSalesforce();
+
+    //VillainService.pullData();
+
     $scope.data = VillainService.data;
+    $scope.forceData = VillainService.forceData;
+    console.log("forcedata", VillainService.forceData);
+    $scope.forceresponse = VillainService.forceresponse;
+
+
+
+
+
 }]);
